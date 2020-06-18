@@ -26,7 +26,9 @@ class App extends React.Component {
             }
         });
         this.setState({ videos: response.data.items });
+        this.setState({ selectedVideo: null });
     }
+
 
 
     render() {
